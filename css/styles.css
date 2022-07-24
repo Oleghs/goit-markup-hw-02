@@ -53,11 +53,12 @@ body {
 описание rgba(117, 117, 117, 1)
 цвет фона #E5E5E5;
 вторичный цвет фона #F5F4FA;
-
-
-
-
 */ 
-.logo {
 
+.features h3,
+.features-title,
+.work-title, 
+.team-title
+{
+    color: #212121;
 }
