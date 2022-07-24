@@ -1,0 +1,63 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    /*background-color: #E5E5E5;*/
+    color: rgba(117, 117, 117, 1);
+    
+}
+.site-nav {
+    text-decoration: none;
+    
+}
+
+.site-nav .link {
+    color: #212121;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: #2196F3;
+}
+
+
+.list {
+    /*сброс точк списка*/
+    list-style: none;
+}
+
+.link {
+    /*сброс подчёркивания ссылок*/
+    text-decoration: none;
+    
+}
+
+.links {
+    /*стилизация ссылок почты и телефона*/
+    color: inherit;
+    
+}
+
+.links .link:hover,
+.links .link:focus {
+    color: #2196F3;
+}
+
+.pointer {
+    /*курсор в виде руки*/
+    cursor: pointer;
+}
+.buttons {
+    text-decoration: none;
+}
+/* заголовки rgba(33, 33, 33, 1)
+акцент синий #2196F3;
+описание rgba(117, 117, 117, 1)
+цвет фона #E5E5E5;
+вторичный цвет фона #F5F4FA;
+
+
+
+
+*/ 
+.logo {
+
+}
