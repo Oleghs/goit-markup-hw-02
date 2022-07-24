@@ -57,8 +57,15 @@ body {
 
 .features h3,
 .features-title,
-.work-title, 
-.team-title
+.work-title,
+.team h3,
+.team-title,
+.projects h2
 {
+    
     color: #212121;
+}
+.select {
+    
+    
 }
