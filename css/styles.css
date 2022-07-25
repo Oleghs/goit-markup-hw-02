@@ -1,21 +1,39 @@
+:root {
+    --main-color: #757575;
+    --accent-color: #2196F3;
+    --link-color: #212121;
+    --title-color: #212121; 
+}
+
 body {
     font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
     /*background-color: #E5E5E5;*/
-    color: rgba(117, 117, 117, 1);
+    color: var(--main-color);
     
 }
+/* заголовки rgba(33, 33, 33, 1)
+акцент синий #2196F3;
+описание  #757575
+цвет фона #E5E5E5;
+вторичный цвет фона #F5F4FA;
+*/
+.logo {
+    text-decoration: none;
+}
+
 .site-nav {
     text-decoration: none;
     
 }
 
 .site-nav .link {
-    color: #212121;
+    color: var(--link-color);
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 
@@ -25,35 +43,120 @@ body {
 }
 
 .link {
-    /*сброс подчёркивания ссылок*/
+    /*сброс подчёркивания ссылок и цвет по умолчанию*/
     text-decoration: none;
-    
-}
-
-.links {
-    /*стилизация ссылок почты и телефона*/
     color: inherit;
     
 }
 
-.links .link:hover,
-.links .link:focus {
-    color: #2196F3;
+.nav-links .link:hover,
+.nav-links .link:focus {
+    color: var(--accent-color);
 }
 
-.pointer {
-    /*курсор в виде руки*/
+.main-button {
+    /*кнопка раздела герой*/
+    text-decoration: none;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: #fff;
+    background-color: var(--accent-color);
     cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    
+       
 }
+
+.main-button:hover,
+.main-button:focus {
+    background-color: #62b5f7;  /*догадываюсь, но не уверен, что это так?????!!!!!!*/ 
+
+}
+
 .buttons {
     text-decoration: none;
+    border: 0;
+    border-radius: 4px;
+    color: var(--title-color);
+    background-color: #F5F4FA;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    
+       
+    
+ 
 }
-/* заголовки rgba(33, 33, 33, 1)
-акцент синий #2196F3;
-описание rgba(117, 117, 117, 1)
-цвет фона #E5E5E5;
-вторичный цвет фона #F5F4FA;
-*/ 
+
+.accent-buttons:hover,
+.accent-buttons:focus {
+    color: #fff;
+    background-color: var(--accent-color);
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #000;  /* должен быть FFF */
+}
+
+.features-header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--title-color);
+}
+
+.features-description {
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.features-title,
+.work-title,
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    color: var(--title-color);
+           
+}
+
+.team-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--title-color);
+}
+
+.team-name-description {
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.project-header {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+}
+
+.features-description {
+    font-size: 16px;
+    line-height: 1.88;
+}
 
 .features h3,
 .features-title,
@@ -63,9 +166,10 @@ body {
 .projects h2
 {
     
-    color: #212121;
+    color: var(--title-color);
 }
-.select {
-    
-    
+
+.foot-adress {
+    /*изменить цвет на белый, когда будет оформление всей секции! */
+    color: green;
 }
