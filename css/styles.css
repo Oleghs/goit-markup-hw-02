@@ -41,6 +41,9 @@ body {
     color: var(--accent-color);
 }
 
+.active-color {
+    color: red;
+}
 
 .list {
     /*сброс точк списка*/
@@ -50,6 +53,9 @@ body {
 .link {
     /*сброс подчёркивания ссылок и цвет по умолчанию*/
     text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.19;
     color: inherit;
     
 }
@@ -175,6 +181,9 @@ body {
 }
 
 .foot-adress {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
     /*изменить цвет на белый, когда будет оформление всей секции! */
     color: green;
 }
