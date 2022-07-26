@@ -42,7 +42,7 @@ body {
 }
 
 .active-color {
-    color: red;
+    color: var(--accent-color);
 }
 
 .list {
