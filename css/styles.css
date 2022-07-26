@@ -3,6 +3,7 @@
     --accent-color: #2196F3;
     --link-color: #212121;
     --title-color: #212121; 
+    --button-wh-color: #fff;
 }
 
 body {
@@ -65,13 +66,17 @@ body {
     color: var(--accent-color);
 }
 
+.link.primary {
+    color: var(--accent-color);
+}
+
 .main-button {
     /*кнопка раздела герой*/
     text-decoration: none;
     border: 0;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    color: #fff;
+    color: var(--button-wh-color);
     background-color: var(--accent-color);
     cursor: pointer;
     font-weight: 700;
@@ -84,7 +89,9 @@ body {
 
 .main-button:hover,
 .main-button:focus {
-    background-color: #62b5f7;  /*догадываюсь, но не уверен, что это так?????!!!!!!*/ 
+    color: var(--accent-color);
+    background-color: var(--button-wh-color);
+
 
 }
 
@@ -100,16 +107,23 @@ body {
     line-height: 1.62;
     text-align: center;
     
-       
-    
- 
 }
 
-.accent-buttons:hover,
-.accent-buttons:focus {
-    color: #fff;
+
+.buttons:hover,
+.buttons:focus {
+    color: var(--button-wh-color);
     background-color: var(--accent-color);
 }
+
+.main-button.primary,
+.buttons.primary {
+    color: var(--button-wh-color);
+    background-color: var(--accent-color);
+}
+
+
+
 
 .hero-title {
     font-weight: 900;
