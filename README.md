@@ -4,5 +4,4 @@ Second homework from Go-IT school
 
 осталось:
 
-- стилизировать текст ссылок и адресов
 -
