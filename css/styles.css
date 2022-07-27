@@ -205,20 +205,10 @@ body {
     line-height: 1.88;
 }
 
-.features h3,
-.team h3,
-.team-title,
-.projects h2
-{
-    
-    color: var(--title-color);
-}
-
-
 .footer {
     background-color: var(--heder-footer-color);
     font-style: normal;
-    /*color: #FFF;*/
+   
     
 }
 
