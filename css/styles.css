@@ -4,10 +4,13 @@
     --link-color: #212121;
     --title-color: #212121; 
     --button-wh-color: #fff;
+    --hero-color: #FFF;
+    --heder-footer-color: #2F303A;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 14px;
     letter-spacing: 0.03em;
     /*background-color: #E5E5E5;*/
     color: var(--main-color);
@@ -25,7 +28,7 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    color: #2196F3;
+    color: #000000;
 }
 
 .site-nav {
@@ -53,9 +56,9 @@ body {
 
 .link {
     /*сброс подчёркивания ссылок и цвет по умолчанию*/
-    text-decoration: none;
     font-style: normal;
-    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
     line-height: 1.19;
     color: inherit;
     
@@ -68,6 +71,21 @@ body {
 
 .link.primary {
     color: var(--accent-color);
+}
+
+.hero {
+    background-color : var(--heder-footer-color);
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--hero-color);
+    /* должен быть FFF */
 }
 
 .main-button {
@@ -125,30 +143,35 @@ body {
 
 
 
-.hero-title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #000;  /* должен быть FFF */
-}
+
 
 .features-header {
-    font-weight: 700;
-    font-size: 14px;
+    /*font-weight: 700;*/
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--title-color);
 }
 
 .features-description {
-    font-size: 14px;
     line-height: 1.71;
 }
 
-.features-title,
+.visually-hidden {
+    /* скрытие названия заголовка. заголовок только для семантики */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    
+}
+
+
 .work-title,
 .team-title {
     font-weight: 700;
@@ -179,13 +202,10 @@ body {
 }
 
 .features-description {
-    font-size: 16px;
     line-height: 1.88;
 }
 
 .features h3,
-.features-title,
-.work-title,
 .team h3,
 .team-title,
 .projects h2
@@ -194,10 +214,19 @@ body {
     color: var(--title-color);
 }
 
-.foot-adress {
+
+.footer {
+    background-color: var(--heder-footer-color);
     font-style: normal;
-    font-size: 14px;
+    /*color: #FFF;*/
+    
+}
+
+.logo.footer {
+    color: #FFF;
+}
+
+.foot-adress {
     line-height: 1.71;
-    /*изменить цвет на белый, когда будет оформление всей секции! */
-    color: green;
+    color: #FFF;
 }
